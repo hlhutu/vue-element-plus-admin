@@ -52,7 +52,7 @@ export default [
   },
   // 登录接口
   {
-    url: '/mock/user/login',
+    url: '/login',
     method: 'post',
     timeout,
     response: ({ body }) => {

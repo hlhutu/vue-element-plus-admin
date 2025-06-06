@@ -5,7 +5,9 @@ import { AxiosInstance, InternalAxiosRequestConfig, RequestConfig, AxiosResponse
 import { ElMessage } from 'element-plus'
 import { REQUEST_TIMEOUT } from '@/constants'
 
-export const PATH_URL = import.meta.env.VITE_API_BASE_PATH
+// url前缀，如果mock开启，则不需要前缀
+export const PATH_URL =
+  import.meta.env.VITE_USE_MOCK === 'true' ? '' : import.meta.env.VITE_API_BASE_PATH
 
 const abortControllerMap: Map<string, AbortController> = new Map()
 
