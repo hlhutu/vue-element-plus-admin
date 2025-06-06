@@ -77,7 +77,7 @@ export default [
   },
   // 退出接口
   {
-    url: '/mock/user/loginOut',
+    url: '/logout',
     method: 'get',
     timeout,
     response: () => {
